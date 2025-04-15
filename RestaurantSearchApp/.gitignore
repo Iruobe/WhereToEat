@@ -34,3 +34,7 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+ 
+#api key
+src/api/yelp.js
+
