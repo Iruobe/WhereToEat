@@ -4,6 +4,11 @@ import ResultDetail from "./ResultsDetail";
 import { withNavigation } from "react-navigation";
 
 const ResultList = ({title,results, navigation}) => {
+    //closes any section without search results
+    if (!results.length){
+        return null;
+    }
+
     return <View style={styles.container}>
         <Text style={styles.title}>{title}</Text>
         <FlatList
